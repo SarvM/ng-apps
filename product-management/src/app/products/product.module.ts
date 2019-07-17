@@ -9,7 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 
 const appRoutes: Routes = [
   {path: 'products', component: ProductListComponent },
-  {path: 'products/:id', canActivate: [ProductDetailGuard] component: ProductDetailComponent }
+  {path: 'products/:id', canActivate: [ProductDetailGuard], component: ProductDetailComponent }
 ]
 
 @NgModule({
