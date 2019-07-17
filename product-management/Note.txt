@@ -1,0 +1,36 @@
+## Angular details available here...
+
+** Understand the components which are eligible for lazy load. 
+** Design the Routing Diagram to understand the flow diagram.
+
+1. Setting the base path in the index file <base href="/">
+2. Every feature should have a module to export all the components.
+3. Router URL are activated and used in the browser, it won't invoke the server. 
+4. URL Rewriting is required to avoid 404 page error. Server should be configured to avoid this scenario. 
+5. Include commonModule to avoid issues on directive.
+6. Module helps code organization and its difficult do that in javasript. 
+7. Cohesive and coherence 
+8. Typescript Module, ES2015 (6) Module, Angular Module
+9. ES6 Module for code and Angular Module for the application. 
+10. To understand the packages created for angular >> https://www.npmjs.com/~angular
+11. The angular is modular
+12. Directive to enhance the functionality of html element. 
+13. Pipes transform the output values
+14. Interface >> a specification identifying a related set of properties and methods.
+15. Class  >> a class commits to supporting the specification by implementing the interface.
+16. Important!! >> Use the interface as a data type. Development time only.
+17. Life cycle hooks >> Create, Render, Create and Render Children, Process Change, Destroy.
+18. Angular team statement >> "Angular doesn't offer such pipes because they perform poorly and  prevent aggressive minifiation"
+19. Important!! >> Sorting and filtering logic should be in component itself.
+20. Getter and Setter to look for a value from component and make some changes in the data... like filter. 
+21. Important!! >> Service will help the component to be light weight and handle most of the logic in service. 
+22. Service >> A class with a focused purpose.
+23. Service >> Encapsulate external interactions, provide shared data or logic across components. 
+24. Service >> providedIn: 'root'
+25. Observables variable should have $ symbol -- suffix.
+26. Use paramMap instead of params
+27. Route Guard >> ng g g products/product-detail
+28. Create separate module for products and shared >> ng g m shared/shared --flat m products/product.module
+29. Every module to have >> routing and module
+30. ng test
+31. ng build >> build the solution -- ng build vs ng build --prod (AOT Minification)
