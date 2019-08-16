@@ -1,0 +1,27 @@
+<div class="container">
+  <h1 class="text-uppercase">Shopping Invoice</h1>
+  <p class="lead">This application is to demonstrate angular component communication</p>
+  <div class="form-group">
+    <label for="itemName">Please enter Item Name</label>
+    <input type="text" id="itemName" class="form-control" name="itemName" 
+    #itemName>
+  </div>
+  <div class="form-group">
+    <label for="itemPrice">Please enter Item Price</label>
+    <input type="text" class="form-control" id="itemPrice" name="itemPrice" 
+    #itemPrice>
+  </div>
+  <button class="btn btn-success mr-2" 
+  (click)="onAddVegetable()">Add Vegetables</button>
+  <button class="btn btn-primary" 
+  (click)="onAddCosmetic()">Add Cosmetics</button>
+</div>
+<hr>
+<div class="container">
+  <ul class="list-group" *ngFor="let invoiceItem of invoiceItems" >
+    <li class="list-group-item text-white"
+     [ngStyle]="{'background-color': invoiceItem.type == 'veg'? 'green' : 'blue'}" >
+      {{invoiceItem.name}} {{invoiceItem.price}}
+    </li>
+  </ul>
+</div>
