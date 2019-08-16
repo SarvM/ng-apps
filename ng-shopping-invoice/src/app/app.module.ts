@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { InvoiceInputComponent } from './invoice-input/invoice-input.component';
+import { InvoiceDisplayComponent } from './invoice-display/invoice-display.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InvoiceInputComponent,
+    InvoiceDisplayComponent
   ],
   imports: [
     BrowserModule,
